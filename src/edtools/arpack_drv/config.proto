@@ -1,0 +1,7 @@
+package edtools;
+
+message ArpackDrvConfig {
+  required int32 nev = 1;
+  required int32 ncv = 2;
+  optional int32 maxIteration = 3 [default = 500];
+}
