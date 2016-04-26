@@ -54,6 +54,10 @@ namespace edtools {
       return dyn_bitset_impl::FFS<base_type>::op(m_data);
     }
 
+    size_type lzcnt() const {
+      return dyn_bitset_impl::LZCNT<base_type>::op(m_data);
+    }
+
   private:
     base_type m_data;
 #ifndef NDEBUG
